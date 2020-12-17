@@ -48,13 +48,13 @@ basic.forever(function () {
     if (maqueen.Ultrasonic(PingUnit.Centimeters) < 15) {
         while (maqueen.Ultrasonic(PingUnit.Centimeters) < 20) {
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, 255)
-            basic.pause(1000)
+            basic.pause(500)
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 255)
-            basic.pause(1000)
+            basic.pause(500)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 255)
             basic.pause(1000)
             maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 255)
-            basic.pause(2000)
+            basic.pause(500)
             maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 255)
         }
     }
